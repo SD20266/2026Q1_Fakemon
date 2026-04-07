@@ -1,0 +1,67 @@
+{
+  "id": "voltoa",
+  "name": "voltoa",
+  "createdBy": "Sam Dean",
+  "emoji": "🔌",
+  "type": "ELECTRIC",
+
+  // The five stats — adjust these numbers to build your Fakemon's personality
+  "hp": 100,       // Health: how much damage you can take (80-140)
+  "power": 100,    // Power: scales your damage output (80-120)
+  "speed": 90,     // Speed: who goes first on tied move speed (60-120)
+  "defense": 10,  // Defense: % damage reduction from incoming hits (0-40)
+  "accuracy": 90, // Accuracy: base % chance your moves will hit (70-100)
+
+  "description": "electric jerboa.",
+
+  "moves": [
+
+    // Move 1: A damage move with a status effect
+    {
+      "id": "move_onw",
+      "name": "⚡ tail spark",
+      "desc": "from a swipe of a tail to an electric shock.",
+      "speed": "medium",
+      "damage": [14, 20],
+      "status": "shock",
+      "statusChance": 0.35
+    },
+
+    // Move 2: A plain fast attack
+    {
+      "id": "move_two",
+      "name": "bolting stomp",
+      "desc": "An electrical stomp.",
+      "speed": "fast",
+      "damage": [18, 24],
+      "status": null,
+      "statusChance": 0
+    },
+
+    // Move 3: A heal move (negative damage = heals you!)
+    {
+      "id": "move_three",
+      "name": "💊 Heal Move",
+      "desc": "Restore 25 HP.",
+      "speed": "slow",
+      "damage": [-25, -25],
+      "status": null,
+      "statusChance": 0
+    },
+
+    // Move 4: A pure status move (no damage)
+    {
+      "id": "move_four",
+      "name": "😵 Confuse Ray",
+      "desc": "Scrambles the enemy's brain. No damage, just chaos.",
+      "speed": "medium",
+      "damage": [0, 0],
+      "status": "confuse",
+      "statusChance": 1.0
+    }
+
+    // Add more moves here, up to 8 total!
+    // Remember: put a comma after every } EXCEPT the last one.
+
+  ]
+}
